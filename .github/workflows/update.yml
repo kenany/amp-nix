@@ -63,7 +63,6 @@ jobs:
           body: This PR was automatically generated.
           branch: update-amp-${{ steps.check.outputs.latest }}
           delete-branch: true
-          draft: always-true
           sign-commits: true
 
       - name: Enable auto-merge
