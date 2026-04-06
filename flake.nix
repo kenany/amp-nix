@@ -12,7 +12,7 @@
     flake-utils,
   }: let
     overlay = final: prev: {
-      amp = final.callPackage ./package.nix {};
+      amp-cli = final.callPackage ./package.nix {};
     };
   in
     flake-utils.lib.eachDefaultSystem (system: let
@@ -23,18 +23,18 @@
       };
     in {
       packages = {
-        default = pkgs.amp;
-        amp = pkgs.amp;
+        default = pkgs.amp-cli;
+        amp-cli = pkgs.amp-cli;
       };
 
       apps = {
         default = {
           type = "app";
-          program = "${pkgs.amp}/bin/amp";
+          program = "${pkgs.amp-cli}/bin/amp";
         };
-        amp = {
+        amp-cli = {
           type = "app";
-          program = "${pkgs.amp}/bin/amp";
+          program = "${pkgs.amp-cli}/bin/amp";
         };
       };
 

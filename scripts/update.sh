@@ -65,7 +65,7 @@ def update_to_version [version: string] {
   rm package.nix.bak
   log_info "Verifying build..."
 
-  let build_result = (do { ^nix build "#amp" } | complete)
+  let build_result = (do { ^nix build "#amp-cli" } | complete)
   if $build_result.exit_code != 0 {
     log_error "Build verification failed"
     return false
