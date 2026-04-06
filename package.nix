@@ -37,7 +37,7 @@
 in
   assert platform != null || throw "Amp native runtime is not supported on ${stdenv.hostPlatform.system}. Supported: aarch64-darwin, x86_64-darwin, x86_64-linux, aarch64-linux";
     stdenv.mkDerivation rec {
-      pname = "amp";
+      pname = "amp-cli";
       inherit version;
 
       dontStrip = true;

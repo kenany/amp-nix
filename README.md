@@ -42,9 +42,9 @@ Add to your `flake.nix`:
       };
     in
     {
-      # Now `pkgs.amp` is available.
+      # Now `pkgs.amp-cli` is available.
       devShells.default = pkgs.mkShell {
-        buildInputs = [ pkgs.amp ];
+        buildInputs = [ pkgs.amp-cli ];
       };
     };
 }
