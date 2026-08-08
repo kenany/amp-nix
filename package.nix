@@ -5,13 +5,13 @@
   makeBinaryWrapper,
   autoPatchelfHook,
 }: let
-  version = "0.0.1786147648-g672f7d";
+  version = "0.0.1786162957-g48b3cf";
 
   nativeHashes = {
-    "darwin-arm64" = "117cjq03wi12q1lqfx2zzy111i6phjfz4jgrcvk5sl9rbk2krqna";
-    "darwin-x64" = "1irpmck9ar3y7yw3x065ip4hgj4cm7sk4sk1z6m4bs1wilvy49bm";
-    "linux-x64" = "10mlnaidfw4n5h91g4vca3d1i08a3vnc4jdcsnbmi0vp09p3bs1m";
-    "linux-arm64" = "1y0a4fj7bm7c6w6pxcl7hknflsm65na5hjwd6znz0cyy9z7mzszv";
+    "darwin-arm64" = "02zfkw8inmis0fyckmxbkis7rprr8g2fz17kqz7xyhxz07x9ymny";
+    "darwin-x64" = "069ia780vqh1lwgs7hgwygl3zbd3xgqdi8871nyc7dpd33r6hqvj";
+    "linux-x64" = "10h9h64fjyn96y2lhixgqyi5zby1wfrv6nqgp57ggg34glkcf031";
+    "linux-arm64" = "1xsbmm0bg73gl9rw2f4dj1qmwgx5778wkrzpk0s0r587j00cb40f";
   };
 
   # Nix system -> Amp platform
